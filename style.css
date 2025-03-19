@@ -1,0 +1,560 @@
+*, html, body{
+    margin: 0;
+	padding: 0;
+	border: 0;
+  scroll-behavior: smooth;
+}
+
+body{
+  color: white;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(34, 33, 48);
+  font-family: monospace;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.123);
+}
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+}
+
+#nav a {
+  margin: 10px;
+}
+
+header img {
+  width: 150px;
+  height: 70px;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-flow: column nowrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  header img {
+    width: 100px;
+    height: auto;
+  }
+
+  #nav {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  #nav a {
+    margin: 5px 0;
+  }
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-flow: column;
+  scroll-margin: 2111px;
+}
+
+#Home {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100vh;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(30, 29, 44);
+}
+
+#Home img {
+  background-color: rgb(44, 44, 44);
+  padding: 20px;
+  border-radius: 300px;
+  width: 400px;
+  height: 400px;
+}
+
+#Home h1 {
+  font-family: monospace;
+  border-right: 4px solid;
+  font-size: xx-large;
+  width: 18ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(20), 
+  blinking 0.5s infinite step-end alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#Home p {
+  font-size: xx-large;
+}
+
+#Me {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+#AboutMe {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  font-size: large;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100%;
+  margin: 10px;
+  background-color: rgb(34, 33, 48);
+}
+
+#AboutMe h1 {
+  margin-bottom: 30px;
+}
+
+#hand {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  animation: mymove 2s infinite;
+}
+
+#css{
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  position: relative;
+  animation: mymove2 5s infinite;
+}
+
+#html {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  position: relative;
+  animation: mymove3 5s infinite;
+}
+
+#js {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  max-width: 200px;
+  position: relative;
+  animation: mymove4 5s infinite,
+  mymove 5s infinite ;
+}
+
+@keyframes mymove {
+  0% {top: 0px;}
+  50% {top: 25px;}
+  100% {top: 0;}
+}
+
+@keyframes mymove2 {
+  0% {left: 0px;}
+  50% {left: 100px;}
+  75% {left: 200px}
+  100% {left: 0px;}
+}
+
+@keyframes mymove3 {
+  0% {left: 0px;}
+  50% {left: -200px;}
+  75% {left: -100px}
+  100% {left: 0px;}
+}
+
+@keyframes mymove4 {
+  0% {left: 0px;}
+  50% {left: 100px;}
+  75% {left: -100px}
+  100% {left: 0px;}
+}
+
+
+#text {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 30%;
+  margin: 30px;
+}
+
+#text p {
+  margin-bottom: 10px;
+}
+
+#Projects {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  margin: 10px;
+  background-color: rgb(30, 29, 44);
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#Projects h1 {
+  margin-bottom: 30px;
+}
+
+
+#cards {
+  width: 1200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.card div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.521);
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card:hover div {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.card:hover h2,
+.card:hover p {
+  opacity: 0;
+}
+
+.card h2,
+.card p {
+  transition: opacity 0.5s;
+}
+
+#project1 {
+  background-image: url('./projectStarWars.png');
+  background-size: cover;
+}
+
+.card h2 {
+  margin: 10px;
+}
+
+
+
+.card.fade-out {
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+.card.new-card {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+#seeMore{
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  font-size: x-large;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: rgb(34, 33, 48);
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+#seeLess{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  font-size: x-large;
+  padding: 9px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: rgb(34, 33, 48);
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  animation: fadeIn 0.5s ease-in-out
+}
+
+#Skills {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  margin: 10px;
+  background-color: rgb(34, 33, 48);
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+#skillsContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#skills {
+  width: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+#Skills h1 {
+  margin-bottom: 30px;
+}
+
+#Skills img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.skill {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.description{
+  display: none;
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: large;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 10px;
+  left: 1000px;
+  top: 3270px;
+}
+
+#descriptions h2 {
+  margin: 50px;
+}
+
+.noSelect {
+  display: none;
+}
+
+
+.showDescription {
+  display: flex;
+  animation: fadeIn 0.5s ease-in-out
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.123);
+}
+
+footer p {
+  text-wrap: nowrap;
+  flex-flow: row nowrap;
+  font-size: medium
+}
+
+#githublink img{
+  width: 70px;
+  height: 70px;
+}
+
+#githublink h1{
+  font-size: x-large;
+  margin: 10px;
+}
+
+#githublink {
+  color: white;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border-radius: 10%;
+  background-color: rgba(41, 41, 41, 0.329);
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footerIcons img{
+  width: 30px;
+  height: 30px;
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+#footerDivIcons {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  #Home {
+    flex-flow: column nowrap;
+  }
+
+  #Home img {
+    width: 300px;
+    height: 300px;
+  }
+
+  #Home h1 {
+    font-size: x-large;
+  }
+
+  #Home p {
+    font-size: large;
+  }
+
+  #AboutMe {
+    flex-flow: column nowrap;
+  }
+
+  #AboutMe h1 {
+    font-size: large;
+  }
+
+  #hand {
+    width: 200px;
+    height: 150px;
+  }
+
+  #css, #html, #js {
+    width: 50px;
+    height: 50px;
+  }
+
+  #text {
+    width: 80%;
+  }
+
+  #Projects h1 {
+    font-size: large;
+  }
+
+  #cards {
+    flex-flow: column nowrap;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card h2 {
+    font-size: large;
+  }
+}
+
