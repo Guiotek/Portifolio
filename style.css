@@ -496,6 +496,36 @@ footer p {
 
 
 
+#Projects h1 {
+  font-size: 3rem;
+}
+
+#text h1 {
+  font-size: 2rem;
+}
+
+#text div p {
+  font-size: 1.1rem;
+}
+
+#AboutMe {
+  height: max-content;
+}
+
+#Me h1 {
+  font-size: 2rem;
+}
+
+#Me p {
+  font-size: 2rem;
+}
+
+#Skills h1 {
+  font-size: 3rem;
+}
+
+
+
 @media screen and (max-width: 800px) {
   body {
     font-size: 3rem;
@@ -589,7 +619,27 @@ footer p {
   }
 
   #Projects h1 {
-    font-size: large;
+    font-size: 3rem;
+  }
+
+  #text h1 {
+    font-size: 2rem;
+  }
+
+  #text div p {
+    font-size: 1.6rem;
+  }
+
+  #AboutMe {
+    height: max-content;
+  }
+
+  #Me h1 {
+    font-size: 2rem;
+  }
+
+  #Me p {
+    font-size: 2rem;
   }
 
   #githublink {
