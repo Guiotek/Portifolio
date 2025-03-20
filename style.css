@@ -231,7 +231,7 @@ main {
 
 
 #cards {
-  width: 100%;
+  width: 60%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -669,3 +669,14 @@ footer p {
   }
 }
 
+@media screen and (max-width: 1279px) { 
+  #cards {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1599px) { 
+  #cards {
+    width: 80%;
+  }
+}
