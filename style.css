@@ -576,6 +576,7 @@ footer p {
     width: 100%;
     height: max-content;
     padding: 30px;
+    margin: 0;
   }
 
   #Projects h1 {
