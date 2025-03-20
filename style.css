@@ -622,20 +622,28 @@ footer p {
     font-size: 2rem;
   }
 
+  #text div {
+    width: 98%;
+  }
+
   #text div p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   #AboutMe {
     height: max-content;
   }
 
+  #Me {
+    padding: 10px;
+  }
+
   #Me h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   #Me p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   #githublink {
