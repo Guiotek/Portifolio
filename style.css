@@ -304,6 +304,7 @@ main {
 }
 
 #seeMore{
+  text-decoration: none;
   display: flex;
   justify-content: center;
   font-family: monospace;
@@ -319,6 +320,7 @@ main {
 }
 
 #seeLess{
+  text-decoration: none;
   display: none;
   justify-content: center;
   align-items: center;
