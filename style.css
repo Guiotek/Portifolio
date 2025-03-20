@@ -215,13 +215,14 @@ main {
 
 #Projects {
   display: flex;
-  height: 100vh;
+  height: max-content;
   width: 100%;
-  margin: 10px;
   background-color: rgb(30, 29, 44);
   justify-content: center;
   flex-flow: column nowrap;
   align-items: center;
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 #Projects h1 {
@@ -230,7 +231,7 @@ main {
 
 
 #cards {
-  width: 1200px;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -335,7 +336,7 @@ main {
 
 #Skills {
   display: flex;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   margin: 10px;
   background-color: rgb(34, 33, 48);
@@ -495,17 +496,26 @@ footer p {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   body {
     font-size: 3rem;
   }
 
   header {
+    display: flex;
     flex-flow: column nowrap;
     height: auto;
     padding: 10px;
     width: 100%;
     justify-content: center;
+    align-items: center;
+  }
+
+  #nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
     align-items: center;
   }
 
@@ -582,6 +592,10 @@ footer p {
     font-size: large;
   }
 
+  #githublink {
+    margin-bottom: 30px;
+  }
+
   #cards {
     display: flex;
     flex-flow: column nowrap;
@@ -643,6 +657,7 @@ footer p {
   }
 
   #Skills {
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -653,3 +668,4 @@ footer p {
     flex-flow: column nowrap
   }
 }
+
