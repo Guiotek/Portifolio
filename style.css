@@ -726,3 +726,27 @@ footer p {
     width: 80%;
   }
 }
+
+@media screen and (max-height: 800px) {
+
+  #Home {
+    height: max-content;
+    padding: 70px 0 ;
+  }
+
+  #Skills {
+    height: max-content;
+    padding: 70px 0 ;
+  }
+
+  #AboutMe {
+    height: max-content;
+    padding: 70px 0 ;
+  }
+
+  #Projects {
+    height: max-content;
+    padding: 70px 0 ;
+  }
+
+}
