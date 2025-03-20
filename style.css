@@ -575,7 +575,6 @@ footer p {
     flex-flow: column nowrap;
     width: 100%;
     height: max-content;
-    padding: 30px;
     margin: 0;
   }
 
