@@ -20,19 +20,16 @@
                             <a class="card new-card">
                                 <div>
                                     <h2>Projeto 4</h2>
-                                    <p>Descrição do projeto 4</p>
                                 </div>
                             </a>
                             <a class="card new-card">
                                 <div>
                                     <h2>Projeto 5</h2>
-                                    <p>Descrição do projeto 5</p>
                                 </div>
                             </a>
                             <a class="card new-card">
                                 <div>
                                     <h2>Projeto 6</h2>
-                                    <p>Descrição do projeto 6</p>
                                 </div>
                             </a>
                         `;

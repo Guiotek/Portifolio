@@ -20,8 +20,8 @@ header {
   justify-content: space-around;
   width: 100%;
   height: 70px;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.123);
+  background-color: rgba(0, 0, 0, 0.507);
+  padding: 1rem;
 }
 header a {
   text-decoration: none;
@@ -383,7 +383,6 @@ main {
 
 .description{
   display: none;
-  position: absolute;
   width: 500px;
   height: 300px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -497,6 +496,34 @@ footer p {
 
 
 @media screen and (max-width: 600px) {
+  body {
+    font-size: 3rem;
+  }
+
+  header {
+    flex-flow: column nowrap;
+    height: auto;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header a {
+    padding: 0.6rem;
+    border-radius: 10px;
+  }
+
+  header a:nth-child(even){
+    font-size: 1.5rem;
+    background-color: rgba(70, 70, 70, 0.329);
+  }
+
+  header a:nth-child(odd){
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.507);
+  }
+
   #Home {
     flex-flow: column nowrap;
   }
@@ -533,7 +560,22 @@ footer p {
   }
 
   #text {
-    width: 80%;
+    width: 100%;
+    margin: 0;
+  }
+
+  #text div {
+    width: 70%;
+  } 
+
+  #Projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: max-content;
+    padding: 30px;
   }
 
   #Projects h1 {
@@ -541,11 +583,34 @@ footer p {
   }
 
   #cards {
+    display: flex;
     flex-flow: column nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
   .card {
-    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 60%;
+    height: 150px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    height:200px;;
+
+  }
+
+  .card div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.158);
   }
 
   .card img {
@@ -554,7 +619,37 @@ footer p {
   }
 
   .card h2 {
-    font-size: large;
+    font-size: 2rem;
+  }
+
+  #seeMore {
+    font-size: 1.6rem;
+  }
+
+  #seeLess {
+    font-size: 1.6rem;
+  }
+
+  #Skills h1 {
+    font-size: 3rem;
+  }
+
+  .noSelect {
+    font-size: 1rem;
+  }
+
+  .description {
+    width: 80%;
+  }
+
+  #Skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  #skillsContainer {
+    flex-flow: column nowrap
   }
 }
-
