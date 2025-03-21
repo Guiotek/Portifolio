@@ -17,17 +17,17 @@
                     // Verifica se os novos projetos já foram adicionados
                     if (!document.querySelector('.new-card')) {
                         const newProjects = `
-                            <a class="card new-card">
+                            <a class="card new-card" id="project4">
                                 <div>
                                     <h2>Projeto 4</h2>
                                 </div>
                             </a>
-                            <a class="card new-card">
+                            <a class="card new-card" id="project5">
                                 <div>
                                     <h2>Projeto 5</h2>
                                 </div>
                             </a>
-                            <a class="card new-card">
+                            <a class="card new-card" id="project6">
                                 <div>
                                     <h2>Projeto 6</h2>
                                 </div>

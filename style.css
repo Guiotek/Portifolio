@@ -289,6 +289,11 @@ main {
   background-size: cover;
 }
 
+#project2 {
+  background-image: url('./fotos/trivia.png');
+  background-size: cover;
+}
+
 .card h2 {
   margin: 10px;
 }
