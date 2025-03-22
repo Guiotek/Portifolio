@@ -265,6 +265,10 @@ main {
   background-color: rgba(0, 0, 0, 0.521);
 }
 
+.card div h2 {
+  text-align: center;
+}
+
 .card:hover {
   transform: scale(1.1);
   cursor: pointer;
@@ -285,11 +289,16 @@ main {
 }
 
 #project1 {
-  background-image: url('./fotos/projectStarWars.png');
+  background-image: url('./fotos/meals.png');
   background-size: cover;
 }
 
 #project2 {
+  background-image: url('./fotos/projectStarWars.png');
+  background-size: cover;
+}
+
+#project3 {
   background-image: url('./fotos/trivia.png');
   background-size: cover;
 }
