@@ -1,11 +1,13 @@
-*, html, body{
-    margin: 0;
-	padding: 0;
-	border: 0;
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
   scroll-behavior: smooth;
 }
 
-body{
+body {
   color: white;
   display: flex;
   flex-flow: column;
@@ -98,8 +100,7 @@ main {
   width: 18ch;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s steps(20), 
-  blinking 0.5s infinite step-end alternate;
+  animation: typing 2s steps(20), blinking 0.5s infinite step-end alternate;
 }
 
 @keyframes typing {
@@ -147,7 +148,7 @@ main {
   animation: mymove 2s infinite;
 }
 
-#css{
+#css {
   width: 100px;
   height: 100px;
   margin: 0;
@@ -169,37 +170,65 @@ main {
   margin-top: 50px;
   max-width: 200px;
   position: relative;
-  animation: mymove4 5s infinite,
-  mymove 5s infinite ;
+  animation: mymove4 5s infinite, mymove 5s infinite;
 }
 
 @keyframes mymove {
-  0% {top: 0px;}
-  50% {top: 25px;}
-  100% {top: 0;}
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 25px;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 @keyframes mymove2 {
-  0% {left: 0px;}
-  50% {left: 100px;}
-  75% {left: 200px}
-  100% {left: 0px;}
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 100px;
+  }
+  75% {
+    left: 200px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 
 @keyframes mymove3 {
-  0% {left: 0px;}
-  50% {left: -200px;}
-  75% {left: -100px}
-  100% {left: 0px;}
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: -200px;
+  }
+  75% {
+    left: -100px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 
 @keyframes mymove4 {
-  0% {left: 0px;}
-  50% {left: 100px;}
-  75% {left: -100px}
-  100% {left: 0px;}
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 100px;
+  }
+  75% {
+    left: -100px;
+  }
+  100% {
+    left: 0px;
+  }
 }
-
 
 #text {
   display: flex;
@@ -228,7 +257,6 @@ main {
 #Projects h1 {
   margin-bottom: 30px;
 }
-
 
 #cards {
   width: 60%;
@@ -289,25 +317,23 @@ main {
 }
 
 #project1 {
-  background-image: url('./fotos/meals.png');
+  background-image: url("./fotos/meals.png");
   background-size: cover;
 }
 
 #project2 {
-  background-image: url('./fotos/projectStarWars.png');
+  background-image: url("./fotos/ava.png");
   background-size: cover;
 }
 
 #project3 {
-  background-image: url('./fotos/trivia.png');
+  background-image: url("./fotos/trivia.png");
   background-size: cover;
 }
 
 .card h2 {
   margin: 10px;
 }
-
-
 
 .card.fade-out {
   animation: fadeOut 0.5s ease-in-out;
@@ -317,7 +343,7 @@ main {
   animation: fadeIn 0.5s ease-in-out;
 }
 
-#seeMore{
+#seeMore {
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -333,7 +359,7 @@ main {
   cursor: pointer;
 }
 
-#seeLess{
+#seeLess {
   text-decoration: none;
   display: none;
   justify-content: center;
@@ -347,7 +373,7 @@ main {
   border: 2px solid white;
   color: white;
   cursor: pointer;
-  animation: fadeIn 0.5s ease-in-out
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 #Skills {
@@ -360,7 +386,7 @@ main {
   flex-flow: column nowrap;
 }
 
-#skillsContainer{
+#skillsContainer {
   width: 100%;
   height: 100%;
   display: flex;
@@ -398,7 +424,7 @@ main {
   align-items: center;
 }
 
-.description{
+.description {
   display: none;
   width: 500px;
   height: 300px;
@@ -423,10 +449,9 @@ main {
   display: none;
 }
 
-
 .showDescription {
   display: flex;
-  animation: fadeIn 0.5s ease-in-out
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -464,15 +489,15 @@ footer {
 footer p {
   text-wrap: nowrap;
   flex-flow: row nowrap;
-  font-size: medium
+  font-size: medium;
 }
 
-#githublink img{
+#githublink img {
   width: 70px;
   height: 70px;
 }
 
-#githublink h1{
+#githublink h1 {
   font-size: x-large;
   margin: 10px;
 }
@@ -491,7 +516,7 @@ footer p {
   text-decoration: none;
 }
 
-.footerIcons img{
+.footerIcons img {
   width: 30px;
   height: 30px;
 }
@@ -509,8 +534,6 @@ footer p {
   justify-content: center;
   align-items: center;
 }
-
-
 
 #Projects h1 {
   font-size: 3rem;
@@ -535,8 +558,6 @@ footer p {
 #Skills h1 {
   font-size: 3rem;
 }
-
-
 
 @media screen and (max-width: 800px) {
   body {
@@ -566,12 +587,12 @@ footer p {
     border-radius: 10px;
   }
 
-  header a:nth-child(even){
+  header a:nth-child(even) {
     font-size: 1.5rem;
     background-color: rgba(70, 70, 70, 0.329);
   }
 
-  header a:nth-child(odd){
+  header a:nth-child(odd) {
     font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.507);
   }
@@ -606,7 +627,9 @@ footer p {
     height: 150px;
   }
 
-  #css, #html, #js {
+  #css,
+  #html,
+  #js {
     width: 50px;
     height: 50px;
   }
@@ -618,7 +641,7 @@ footer p {
 
   #text div {
     width: 70%;
-  } 
+  }
 
   #Projects {
     display: flex;
@@ -682,8 +705,7 @@ footer p {
     margin: 10px;
     align-items: center;
     justify-content: center;
-    height:200px;;
-
+    height: 200px;
   }
 
   .card div {
@@ -733,44 +755,41 @@ footer p {
     align-items: center;
   }
 
-
   #skillsContainer {
-    flex-flow: column nowrap
+    flex-flow: column nowrap;
   }
 }
 
-@media screen and (max-width: 1279px) { 
+@media screen and (max-width: 1279px) {
   #cards {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 1599px) { 
+@media screen and (max-width: 1599px) {
   #cards {
     width: 80%;
   }
 }
 
 @media screen and (max-height: 800px) {
-
   #Home {
     height: max-content;
-    padding: 70px 0 ;
+    padding: 70px 0;
   }
 
   #Skills {
     height: max-content;
-    padding: 70px 0 ;
+    padding: 70px 0;
   }
 
   #AboutMe {
     height: max-content;
-    padding: 70px 0 ;
+    padding: 70px 0;
   }
 
   #Projects {
     height: max-content;
-    padding: 70px 0 ;
+    padding: 70px 0;
   }
-
 }
